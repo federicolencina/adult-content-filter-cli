@@ -1,5 +1,16 @@
-REM -Adult Content Blocker- (Ethernet) | Federico Lencina | -<https://github.com/len-sch>-
+@ECHO OFF
+
+net session >nul 2>&1
+if %errorLevel% neq 0 (
+    powershell -Command "Start-Process '%0' -Verb RunAs"
+    exit /B
+)
+
+@ECHO ON
+
+REM -Adult Content Blocker- (Ethernet) | Author: Federico Lencina | -<https://github.com/len-sch>-
 REM -Stable Version on: Windows 11 Version 23H2
+
 @ECHO OFF
 
 :main
