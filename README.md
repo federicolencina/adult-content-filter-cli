@@ -1,4 +1,4 @@
-# Adult-Content-Blocker
+# Adult-Content-Filter
 CLI Program
 
 Basic program that disables pages not suitable for children, Parental Control applied to net.
