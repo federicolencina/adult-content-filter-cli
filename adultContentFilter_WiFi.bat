@@ -37,7 +37,7 @@ REM -Stable Version on: Windows 11 Version 23H2
 ECHO  To set System Configuration to DISABLE ADULT CONTENT enter 'Y'
 ECHO  To set System Configuration to Cloudflare DNS enter 'C'
 :lap
-ECHO  To set Default System Configuration enter 'D'
+ECHO  To set System's Default Configuration enter 'D'
 :end
 ECHO  To exit from the program enter 'E'
 
