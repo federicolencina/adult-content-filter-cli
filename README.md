@@ -1,4 +1,4 @@
-# Adult-Content-Filter
+# Adult Content Filter (AC Filter)
 CLI Program
 
 Basic program that disables pages not suitable for children, Parental Control applied to net.
