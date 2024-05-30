@@ -28,7 +28,7 @@ if %errorLevel% neq 0 (
 
 @ECHO ON
 
-REM -Adult Content Filter- (WiFi) | Author: Federico Lencina | -<https://github.com/fedelensch>-
+REM -Adult Content Filter- (WiFi) | Author: Federico Lencina | -<https://github.com/federicolencina>-
 REM -Stable Version on: Windows 11 Version 23H2
 
 @ECHO OFF
