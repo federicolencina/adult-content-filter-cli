@@ -47,30 +47,30 @@ ECHO.
 
 
 if /I "%dialVal%"== "y" (
-    netsh interface ipv4 set dnsservers name="Ethernet" source=STATIC address=1.1.1.3 > nul 2>&1
-    netsh interface ipv6 set dnsservers name="Ethernet" source= STATIC address=2606:4700:4700::1113 > nul 2>&1
-    netsh interface ipv4 add dnsservers name="Ethernet" address=1.0.0.3 > nul 2>&1
-    netsh interface ipv6 add dnsservers name="Ethernet" address=2606:4700:4700::1003 > nul 2>&1
+    netsh interface ipv4 set dnsservers name="Wi-Fi" source=STATIC address=1.1.1.3 > nul 2>&1
+    netsh interface ipv6 set dnsservers name="Wi-Fi" source= STATIC address=2606:4700:4700::1113 > nul 2>&1
+    netsh interface ipv4 add dnsservers name="Wi-Fi" address=1.0.0.3 > nul 2>&1
+    netsh interface ipv6 add dnsservers name="Wi-Fi" address=2606:4700:4700::1003 > nul 2>&1
     ipconfig /flushdns > nul
 
     ECHO System Configuration has been changed to: Adult Content Blocked.
     ECHO.
     goto :lap
 ) else if /I "%dialVal%"== "c" (
-    netsh interface ipv4 set dnsservers name="Ethernet" source=STATIC address=1.1.1.1 > nul 2>&1
-    netsh interface ipv6 set dnsservers name="Ethernet" source= STATIC address=2606:4700:4700::1111 > nul 2>&1
-    netsh interface ipv4 add dnsservers name="Ethernet" address=1.0.0.1 > nul 2>&1
-    netsh interface ipv6 add dnsservers name="Ethernet" address=2606:4700:4700::1001 > nul 2>&1
+    netsh interface ipv4 set dnsservers name="Wi-Fi" source=STATIC address=1.1.1.1 > nul 2>&1
+    netsh interface ipv6 set dnsservers name="Wi-Fi" source= STATIC address=2606:4700:4700::1111 > nul 2>&1
+    netsh interface ipv4 add dnsservers name="Wi-Fi" address=1.0.0.1 > nul 2>&1
+    netsh interface ipv6 add dnsservers name="Wi-Fi" address=2606:4700:4700::1001 > nul 2>&1
     ipconfig /flushdns > nul
 
     ECHO System Configuration has been changed to: Cloudflare DNS 1.1.1.1.
     ECHO.
     goto :lap
 ) else if /I "%dialVal%"== "d" (
-    netsh interface ipv4 set dnsservers name="Ethernet" source=DHCP > nul 2>&1
-    netsh interface ipv6 set dnsservers name="Ethernet" source=DHCP > nul 2>&1 
-    netsh interface ipv4 add dnsservers name="Ethernet" address=DHCP > nul 2>&1
-    netsh interface ipv6 add dnsservers name="Ethernet" address=DHCP > nul 2>&1
+    netsh interface ipv4 set dnsservers name="Wi-Fi" source=DHCP > nul 2>&1
+    netsh interface ipv6 set dnsservers name="Wi-Fi" source=DHCP > nul 2>&1 
+    netsh interface ipv4 add dnsservers name="Wi-Fi" address=DHCP > nul 2>&1
+    netsh interface ipv6 add dnsservers name="Wi-Fi" address=DHCP > nul 2>&1
     ipconfig /flushdns > nul
     
     ECHO System Configuration has been changed to: System's Default Configuration.
